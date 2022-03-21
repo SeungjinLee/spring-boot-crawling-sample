@@ -26,6 +26,7 @@ public class NaverCrawlingServiceImplV1 implements CrawlingService {
 	
 	@Override
 	public void executeCrawling() {
+		long start = System.currentTimeMillis();
 		logger.info("executeCrawling start ~~~~~~~~~~~~~~~~~~~~");
 		try {
 			Document doc;
@@ -51,12 +52,13 @@ public class NaverCrawlingServiceImplV1 implements CrawlingService {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 		// 데이터 확인
 		for (StockVO stockVO : stockVOs) {
 			logger.info(stockVO.toString());
 		}
 		logger.info("executeCrawling end ~~~~~~~~~~~~~~~~~~~~");
+		long executionTime = System.currentTimeMillis() - start;
+		logger.info(String.format("[METHOD - EXECUTION_TIME :%sms ", executionTime));
 	}
 
 }
