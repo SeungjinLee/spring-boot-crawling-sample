@@ -27,7 +27,7 @@ public class StockController {
 		ObjectMapper objectMapper = new ObjectMapper();
 		
 		StockReq req = new StockReq();
-		req.setName("아톤");
+//		req.setName("아톤");
 		req.setPrice(500);
 		req.setStockCount(10000L);
 		

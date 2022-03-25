@@ -22,7 +22,7 @@ public class APIExceptionHandler {
 		logger.error(ex.getMessage(), ex);
 		Map<String, Object> result = new HashMap();
 		result.put("resultCode", "9000");
-		result.put("resultMsg", "잘못된 파라미터 입니다.");
+		result.put("resultMsg", ex.getMessage());
 		return result;
 	}
 

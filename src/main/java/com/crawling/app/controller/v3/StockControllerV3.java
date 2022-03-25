@@ -37,7 +37,7 @@ public class StockControllerV3 {
 	}
 	
 	@GetMapping("/list")
-	public CommonRes listStock() {
+	public CommonRes<?> listStock() {
 		List<Stock> stockVOs = stockService.listStock();
 		return CommonRes.builder()
 				.resultCode(ApiCode.Success.getCode())
