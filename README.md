@@ -2,10 +2,11 @@
 네이버 주식 크롤링을 만들어보고 Spring Boot를 사용해 Rest API 구현
 
 * 기술 스펙
-  * Spring boot
+  * Spring Tool Suite 4.14.0
+  * Openjdk-11
+  * Spring boot 2.6.5
   * Jpa
-  * H2 database - DB
-  * Jsoup - 크롤링 라이브러리 
+  * H2 database 
 
 ***
 
