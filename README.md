@@ -31,3 +31,9 @@
 * API 응답데이터 - 리펙토링
   * 하드코딩되어있는 결과코드 **Enum** 타입으로 변경
   * **빌더패턴**을 사용하여 응답코드 유연하게 변경
+
+***
+## cors 오류 문제
+* 인덱스 파일
+  * [index.html](https://github.com/SeungjinLee/spring-boot-crawling-sample/blob/master/index.html)
+
