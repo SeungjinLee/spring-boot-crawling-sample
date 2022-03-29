@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+</head>
+<body>
+
+    <h3>주식 목록</h3>
+    <table>
+        <thead>
+            <th>
+                이름
+            </th>
+            <th>
+                가격
+            </th>
+            <th>
+                주식수
+            </th>
+            <th>
+                시가총액
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>아톤</td>
+                <td>5,000</td>
+                <td>300,000</td>
+                <td>1023040,498</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        // url 개발환경에 맞게 설정 
+        axios.get("http://localhost:8080/v2/stock/list")
+        .then(function (response) {
+            console.log(response);
+        })
+    </script>
+
+</body>
+</html>
