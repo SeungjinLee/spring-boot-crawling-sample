@@ -36,4 +36,5 @@
 ## cors 오류 문제
 * 인덱스 파일
   * [index.html](https://github.com/SeungjinLee/spring-boot-crawling-sample/blob/master/index.html)
+* 크롬 브라우저에서 실행 후 `F12`로 개발자모드 열어서 cors 오류 확인하시고 `spring boot`에서 설정으로 해결해 보세요
 
